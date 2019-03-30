@@ -1,2 +1,1 @@
-# tic-tac-toc-with-react-hook
-Created with CodeSandbox
+1. UI 만들기
