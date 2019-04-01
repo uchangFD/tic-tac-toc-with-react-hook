@@ -18,7 +18,8 @@ class TicTacToc {
   constructor(size) {
     this.state = {
       size,
-      isOver: false
+      isOver: false,
+      bgColors: ["#fce4ec", "#e3f2fd"]
     };
   }
 
@@ -28,6 +29,14 @@ class TicTacToc {
 
   setSize(size) {
     this.state.size = size;
+  }
+
+  setBgColors(color) {
+    this.state.bgColors.push(color);
+  }
+
+  getBgColors() {
+    return this.state.bgColors;
   }
 
   getResult(boards, marker, index) {

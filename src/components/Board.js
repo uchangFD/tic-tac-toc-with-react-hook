@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Block from "./Block";
+import Background from "./Background";
 
 import tictactoc from "../lib/tictactoc";
 
@@ -57,7 +58,7 @@ function Board({ size }) {
   const status = getStatus(boards, isDone, next);
 
   return (
-    <>
+    <div>
       <div id="status">{status}</div>
       <div id="board">
         {boards.map((board, index) => {
@@ -73,7 +74,8 @@ function Board({ size }) {
           );
         })}
       </div>
-    </>
+      <Background next={next} />
+    </div>
   );
 }
 
